@@ -46,7 +46,7 @@ public class SecurityBeansInjector {
     @Bean
     UserDetailsService userDetailsService() {
         return username -> {
-            return userRepository.findByUsername(username).orElseThrow(() -> new UsernameNotFoundException("User not found"));
+            return userRepository.findByUsername(username).orElseThrow();
         };
     }
 }

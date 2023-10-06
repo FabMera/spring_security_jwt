@@ -42,15 +42,6 @@ public class UserModel extends RepresentationModel<UserModel> implements Seriali
         return authorities;
     }
 
-    @Override
-    public String getPassword() {
-        return null;
-    }
-
-    @Override
-    public String getUsername() {
-        return null;
-    }
 
     @Override
     public boolean isAccountNonExpired() {

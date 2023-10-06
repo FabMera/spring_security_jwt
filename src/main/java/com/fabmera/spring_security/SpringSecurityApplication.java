@@ -16,12 +16,12 @@ public class SpringSecurityApplication {
         SpringApplication.run(SpringSecurityApplication.class, args);
     }
 
-    /*@Bean
+    @Bean
     public CommandLineRunner createPasswordCommand() {
         return args -> {
             System.out.println("Password Customer: " + passwordEncoder.encode("123456"));
             System.out.println("Password Administrator: " + passwordEncoder.encode("clave456"));
         };
-    }*/
+    }
 
 }

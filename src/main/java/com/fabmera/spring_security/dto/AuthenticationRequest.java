@@ -1,11 +1,8 @@
 package com.fabmera.spring_security.dto;
 
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.validation.constraints.NotEmpty;
 
-@Getter
-@Setter
-public class AuthenticationRequest {
-    String username;
-    String password;
+public record AuthenticationRequest(@NotEmpty String username, @NotEmpty String password) {
+
+
 }
